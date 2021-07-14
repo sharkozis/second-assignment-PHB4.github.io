@@ -63,7 +63,7 @@ header{
 /*--------------------------header second part--------------------------*/
 .header-article{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     justify-content: space-evenly;
 }
 .l-article{
