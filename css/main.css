@@ -36,6 +36,11 @@ header{
 }
 .navbar-ul ul li{
     margin-right: 36px;
+    transition: .3s all;
+}
+.navbar-ul ul li:hover{
+    border-bottom: 1px solid white;
+    
 }
 .navbar-ul ul li a{
     color: var(--nor);
@@ -43,13 +48,11 @@ header{
     font-weight: 500;
 }
 .navbar-btn{
-    margin-top: 40px;
-}
-.navbar-btn{
     margin-right: 150px;
     font-size: 16px;
     background-color: var(--btn);
     padding: 10px 22px;
+    margin-top: 40px;
 }
 .navbar-btn i,a{
     color: var(--nor)
@@ -88,6 +91,11 @@ header{
     width:556px;
     height: 438px;
     margin-top: 60px;
+    transition: .9s all;
+}
+.banner-article img:hover{
+    transform: translateY(50px);
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.9);   
 }
 /*-------------------------- header part end here --------------------------*/
 
@@ -109,7 +117,12 @@ header{
     width: 330px;
     height: 480px;
     padding: 20px 20px 35px 20px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    transition: .5s all;
+}
+.article:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.9);
+    transform: translateY(-20px);
 }
 .article img{
     width: 100%;
@@ -126,6 +139,9 @@ header{
     font-family: 'Poppins', sans-serif;
 }
 /*----------------------------  mid section end here -------------------------- --*/
+
+
+
 /*----------------------------highlight section start here----------------------------*/
 .highlight-content{
     display: flex;
@@ -134,6 +150,12 @@ header{
 .h-article{
     width: 40%;
     margin:30px 65px 0px 182px;
+    padding:15px;
+    transition: .9s all;
+}
+.h-article:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    
 }
 .h-article h2{
     font-size: 48px;
@@ -155,8 +177,15 @@ header{
 .h-banner img{
     width: 567px;
     height: 427px;
+    transition: 0.5s all linear;
+}
+.h-banner img:hover{
+    transform: translate(25px,-25px)
 }
 /*----------------------------highlight section end here----------------------------*/
+
+
+/*----------------------------ticket section start here----------------------------*/
 .ticket{
     width:100%;
     background-color: var(--btn);
@@ -187,6 +216,9 @@ header{
     width: 18ch;
     margin-top: 5px;
 }
+
+
+/*----------animation--------*/
 @keyframes type{
     0%{
         width:0ch;
@@ -195,19 +227,20 @@ header{
         width:18ch;
     }
 }
+
+
+
 .all-tickets{
     display: flex;
     margin-left: 0;
     margin-top: 60px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.9);
-    /* border: 1px solid rgb(255, 255, 255); */
 }
 .time-box{
-    padding:20px;
+    padding:22px;
     margin:0 30px;
     color: var(--btn);
     text-align: center;
-    
 }
 .time-box h4{
     font-size: 3em;
@@ -215,10 +248,63 @@ header{
     border-radius: 50%;
     width: 80px;
     height: 80px;
+    transition: .5s all;
+    box-sizing: border-box;
+}
+.time-box h4:hover{
+    color:white;
+    background: var(--btn);
+    border: 1px solid white;
+    transition: .5s all;
 }
 .time-box span{
     color: var(--nor);
 }
+/*----------------------------ticket section start here----------------------------*/
+
+
+/*----------------------------footer start here----------------------------*/
+footer{
+    width: 100%;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo{
+    margin-top: 150px;
+}
+.footer-icon{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-icon i{
+    margin-right: 14px;
+    background: #d6d7dd;
+    color: #969BAB;
+    padding:10px;
+    border-radius: 50%;
+    transition: .3s all;
+}
+.footer-icon i:nth-child(1):hover{
+    color:#E4405F;
+}
+.footer-icon i:nth-child(2):hover{
+    color:#1DA1F2;
+}
+.footer-icon i:nth-child(3):hover{
+    color:#CD201F;
+}
+.footer-icon i:nth-child(4):hover{
+    color:#6441a5;
+}
+.footer-end p{
+    color: black;
+    font-weight: bold;
+}
+/*----------------------------footer end here----------------------------*/
+
 
 
 
@@ -269,7 +355,7 @@ header{
     }
     .h-article{
         width: 80%;
-        margin-left: 20px;
+        margin-left:15px;
         margin-bottom: 30px;
     }
     .h-article h2{
@@ -283,9 +369,9 @@ header{
         width: 100%;
     }
     .h-banner img{
-        width: 328px;
+        width: 320px;
         height: 248px;
-        margin-left: 15px;
+        margin-left: 23px;
     }
     /*bonus part------------------------------*/
     .ticket{
@@ -314,18 +400,18 @@ header{
         flex-direction: column;
         align-items: center;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*footer------------------------------*/
+    .last{
+        width: 100%;
+    }
+    .footer-logo{
+        margin-top: 40px;
+    }
+    .footer-logo img{
+        width:340px
+    }
+    .footer-icon i{
+        font-size: 14px;
+        padding:5px;
+    }
 }
