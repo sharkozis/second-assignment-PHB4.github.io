@@ -1,5 +1,5 @@
 @import url("variable.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
@@ -20,6 +20,8 @@ header{
     background-color: var(--bg);
     height: 670px;
     width: 100%;
+}
+main{
 }
 /*--------------------------common lines--------------------------*/
 
@@ -94,8 +96,59 @@ header{
 
 /*-------------------------- header part end here --------------------------*/
 
+
+/*----------------------------  mid section start here -------------------------- --*/
+.container{
+    display: flex; 
+     flex-direction: column; 
+     align-items: center; 
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-row-gap: 30px; */
+    margin-top: 70px;
+    grid-gap: 30px;
+}
+.article{
+    width: 330px;
+    height: 480px;
+    padding: 20px 20px 35px 20px;
+    /* margin: 0px 30px; */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.article img{
+    width: 100%;
+}
+.article h2{
+    margin-top: 16px;
+    font-size: 28px;
+    color: var(--h-font);
+}
+.article p{
+    margin-top: 10px;
+    color: var(--p-font);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+/*----------------------------  mid section end here -------------------------- --*/
+
+
+
+
+
+
+
 /*--------------------------Media Querie part here--------------------------*/
-@media screen and (max-width:600px){
+@media screen and (max-width:688px){
     header{
         width: 100%;
     }
@@ -106,10 +159,12 @@ header{
         display: flex;
         flex-direction: column;
         margin-left:20px;
+        
     }
     .l-article{
         width:278px;
         height:278px;
+        margin-top: 6 0px;
     }
     .l-article h2,a{
         font-size: 36px;
@@ -119,3 +174,16 @@ header{
         height: 260px;
         margin-top: 0px;
     }
+    .container{
+        width: 100%;
+    }
+    .article-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .article{
+        width: 80%;
+        margin-left: 15px;
+        /* margin-left: 20px; */
+        /* grid-row-gap:0; */
+    }
+}
