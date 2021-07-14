@@ -1,0 +1,10 @@
+:root{
+
+    /* for basic colors */
+
+    --bg: #2D25A0;
+    --normal: white;
+    --btn: #E02C6D;
+    --h-font: #0A0826; /*h means heading*/
+    --p-font: #6C6C6C; /*p means paragraph*/
+}
