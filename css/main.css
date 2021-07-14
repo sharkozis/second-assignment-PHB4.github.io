@@ -1,8 +1,121 @@
 @import url("variable.css");
-@import url('media.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-p{
-    background-color: var(--bg);
+
+/*--------------------------common lines--------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    list-style: none;
+    text-decoration: none;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+header{
+    background-color: var(--bg);
+    height: 670px;
+    width: 100%;
+}
+/*--------------------------common lines--------------------------*/
+
+
+
+/*-------------------------- header part start here --------------------------*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-ul ul{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.navbar-ul ul li{
+    margin-right: 36px;
+}
+.navbar-ul ul li a{
+    color: var(--nor);
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar-btn{
+    margin-top: 40px;
+}
+
+.navbar-btn{
+    margin-right: 150px;
+    font-size: 16px;
+    background-color: var(--btn);
+    padding: 10px 22px;
+}
+.navbar-btn i,a{
+    color: var(--nor)
+}
+.navbar-btn i{
+    margin-right: 8px;
+}
+/*--------------------------header second part--------------------------*/
+.header-article{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.l-article{
+    Width:485px;
+    Height:230px;
+    margin-top: 110px;
+}
+.l-article h2{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--nor);
+    margin-bottom: 20px;
+}
+.l-article a{
+    font-size: 16px;
+    background-color: var(--btn);
+    padding: 10px 22px;
+}
+.l-article i{
+    color: var(--nor);
+    font-size: 16px;
+    margin-left: 8px;
+}
+.banner-article img{
+    width:556px;
+    height: 438px;
+    margin-top: 60px;
+}
+
+/*-------------------------- header part end here --------------------------*/
+
+/*--------------------------Media Querie part here--------------------------*/
+@media screen and (max-width:600px){
+    header{
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    .header-article{
+        display: flex;
+        flex-direction: column;
+        margin-left:20px;
+    }
+    .l-article{
+        width:278px;
+        height:278px;
+    }
+    .l-article h2,a{
+        font-size: 36px;
+    }
+    .banner-article img{
+        width:330px;
+        height: 260px;
+        margin-top: 0px;
+    }
