@@ -1,6 +1,7 @@
 @import url("variable.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 
@@ -155,20 +156,69 @@ header{
     width: 567px;
     height: 427px;
 }
-
-
-
-
-
-
-
-
-
-
 /*----------------------------highlight section end here----------------------------*/
-
-
-
+.ticket{
+    width:100%;
+    background-color: var(--btn);
+    height: 250px;
+    margin-top: 40px;
+    padding:20px 0px;
+}
+.ticket-info{
+    display: flex;
+    align-items: center;
+}
+.notice{
+    width:40%;
+    margin: 50px 30px 0px 150px;
+    font-family: 'Merienda', cursive;
+    
+    color: var(--nor);
+}
+.notice h3{
+    font-size: 3em;
+    transform: rotate(-10deg);
+    animation: type 5s infinite steps(15);
+    -webkit-animation: type 2.9s infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    width: 18ch;
+    margin-top: 5px;
+}
+@keyframes type{
+    0%{
+        width:0ch;
+    }
+    100%{
+        width:18ch;
+    }
+}
+.all-tickets{
+    display: flex;
+    margin-left: 0;
+    margin-top: 60px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.9);
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+.time-box{
+    padding:20px;
+    margin:0 30px;
+    color: var(--btn);
+    text-align: center;
+    
+}
+.time-box h4{
+    font-size: 3em;
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.time-box span{
+    color: var(--nor);
+}
 
 
 
@@ -237,7 +287,34 @@ header{
         height: 248px;
         margin-left: 15px;
     }
-
+    /*bonus part------------------------------*/
+    .ticket{
+        width: 100%;
+        height: 100%;
+    }
+    .ticket-info{
+        flex-direction: column;
+    }
+    .notice{
+        width: 40%;
+        margin-left: 40px;
+        margin-right: 0px;       
+    }
+    .notice h3{
+        font-size: 1em;
+        width: 0ch;
+    }
+    .all-tickets{
+        width: 100%;
+        flex-direction: column;
+        font-size: 18px;
+    }
+    .time-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 
 
 
