@@ -8,20 +8,16 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
     list-style: none;
     text-decoration: none;
 }
 body{
     font-family: 'Poppins', sans-serif;
-    
 }
 header{
     background-color: var(--bg);
     height: 670px;
     width: 100%;
-}
-main{
 }
 /*--------------------------common lines--------------------------*/
 
@@ -48,7 +44,6 @@ main{
 .navbar-btn{
     margin-top: 40px;
 }
-
 .navbar-btn{
     margin-right: 150px;
     font-size: 16px;
@@ -93,7 +88,6 @@ main{
     height: 438px;
     margin-top: 60px;
 }
-
 /*-------------------------- header part end here --------------------------*/
 
 
@@ -107,7 +101,6 @@ main{
 .article-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* grid-row-gap: 30px; */
     margin-top: 70px;
     grid-gap: 30px;
 }
@@ -115,7 +108,6 @@ main{
     width: 330px;
     height: 480px;
     padding: 20px 20px 35px 20px;
-    /* margin: 0px 30px; */
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .article img{
@@ -132,15 +124,48 @@ main{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
-
-
-
-
-
-
-
 /*----------------------------  mid section end here -------------------------- --*/
+/*----------------------------highlight section start here----------------------------*/
+.highlight-content{
+    display: flex;
+    margin-top: 160px;
+}
+.h-article{
+    width: 40%;
+    margin:30px 65px 0px 182px;
+}
+.h-article h2{
+    font-size: 48px;
+    color: var(--h-font);
+}
+.h-article p{
+    font-size: 16px;
+    color:var(--p-font);
+    margin-bottom: 25px;
+}
+.h-article a{
+    font-size: 16px;
+    background-color: var(--btn);
+    padding: 10px 22px;
+}
+.h-banner{
+    width: 50%;
+}
+.h-banner img{
+    width: 567px;
+    height: 427px;
+}
 
+
+
+
+
+
+
+
+
+
+/*----------------------------highlight section end here----------------------------*/
 
 
 
@@ -159,7 +184,6 @@ main{
         display: flex;
         flex-direction: column;
         margin-left:20px;
-        
     }
     .l-article{
         width:278px;
@@ -174,6 +198,8 @@ main{
         height: 260px;
         margin-top: 0px;
     }
+    /*header----------------------------*/
+    /*mid----------------------------*/
     .container{
         width: 100%;
     }
@@ -183,7 +209,46 @@ main{
     .article{
         width: 80%;
         margin-left: 15px;
-        /* margin-left: 20px; */
-        /* grid-row-gap:0; */
     }
+    /*highlight----------------------------*/
+    .hightlight{
+        width: 100%;
+    }
+    .highlight-content{
+        flex-direction: column;
+    }
+    .h-article{
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .h-article h2{
+        font-size: 30px;
+    }
+    .h-article p{
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .h-banner{
+        width: 100%;
+    }
+    .h-banner img{
+        width: 328px;
+        height: 248px;
+        margin-left: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
